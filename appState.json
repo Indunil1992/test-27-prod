@@ -4,12 +4,12 @@
       "92ce5fd1-3a86-4115-a0b8-bd9f98814eac": {
         "id": "92ce5fd1-3a86-4115-a0b8-bd9f98814eac",
         "parent": null,
-        "name": "lambda.js",
+        "name": "lambdasqs620.js",
         "type": "JS_LAMBDA",
         "isDirectory": false,
         "children": [],
         "isRemovable": true,
-        "filePath": "lambda.js",
+        "filePath": "lambdasqs620.js",
         "cursor": {
           "lineNumber": 35,
           "column": 29
@@ -165,7 +165,7 @@
     "platform": "AWS",
     "language": "nodejs",
     "platformRegions": {},
-    "lastSave": 1582807707804
+    "lastSave": 1582807853514
   },
   "VCS_STATE": {
     "provider": "GitHub",

@@ -19,33 +19,6 @@ exports.handler = async (event) => {
         console.log(err);
 
     };
-    try {
-        let data = await sqs.sendMessage({
-            QueueUrl: `https://sqs.${process.env.AWS_REGION}.amazonaws.com/${process.env.SIGMA_AWS_ACC_ID}/fdfdfe.fifo`,
-            MessageBody: "test1",
-            DelaySeconds: 0,
-            MessageDeduplicationId: "njjjjjjjjjjjjh",
-            MessageGroupId: "0"
-        }).promise();
-        console.log("data-sendMsg");
-        console.log(data);
-    } catch (err) {
-        // error handling goes here
-    };
-    console.log("err-sendMsg");
-    console.log(err);
-    try {
-        let data = await sqs.deleteMessage({
-            QueueUrl: `https://sqs.${process.env.AWS_REGION}.amazonaws.com/${process.env.SIGMA_AWS_ACC_ID}/my-message-queue`,
-            ReceiptHandle: "d"
-        }).promise();
-        console.log("data-deleteMe");
-        console.log(data);
-    } catch (err) {
-        // error handling goes here
-            console.log("err-deleteMe");
-    console.log(err);
-    };
 
 
     return { "message": "Successfully executed" };
